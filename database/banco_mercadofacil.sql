@@ -23,7 +23,7 @@ create table vendas
     usuario_id int,
     valor_total decimal(10,2),
     data datetime,
-    foreign key(usuario_id) references usuario(id)
+    foreign key(usuario_id) references usuarios(id)
 );
 
 create table itens_venda
