@@ -1,0 +1,6 @@
+@MerceariaFacil.API_HostAddress = http://localhost:5282
+
+GET {{MerceariaFacil.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
