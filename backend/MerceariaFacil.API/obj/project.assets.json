@@ -4565,19 +4565,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Samo\\.nuget\\packages\\": {}
+    "C:\\Users\\Lara\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Samo\\OneDrive\\Área de Trabalho\\mercearia-facil\\backend\\MerceariaFacil.API\\MerceariaFacil.API.csproj",
+      "projectUniqueName": "C:\\Users\\Lara\\Desktop\\Sistema_de_mercearia\\Sistema-de-Mercearia\\backend\\MerceariaFacil.API\\MerceariaFacil.API.csproj",
       "projectName": "MerceariaFacil.API",
-      "projectPath": "C:\\Users\\Samo\\OneDrive\\Área de Trabalho\\mercearia-facil\\backend\\MerceariaFacil.API\\MerceariaFacil.API.csproj",
-      "packagesPath": "C:\\Users\\Samo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Samo\\OneDrive\\Área de Trabalho\\mercearia-facil\\backend\\MerceariaFacil.API\\obj\\",
+      "projectPath": "C:\\Users\\Lara\\Desktop\\Sistema_de_mercearia\\Sistema-de-Mercearia\\backend\\MerceariaFacil.API\\MerceariaFacil.API.csproj",
+      "packagesPath": "C:\\Users\\Lara\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lara\\Desktop\\Sistema_de_mercearia\\Sistema-de-Mercearia\\backend\\MerceariaFacil.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Samo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Lara\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

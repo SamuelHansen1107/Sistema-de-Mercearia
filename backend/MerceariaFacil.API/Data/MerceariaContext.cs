@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 
 public class MerceariaContext : DbContext
 {
-    private string stringConexao = "Server=localhost;Port=3306;Database=MerceariaDB;Uid=root;Pwd=;";
+    private string stringConexao = "Server=localhost;Port=3306;Database=MerceariaDB;Uid=root;Pwd=123;";
     public MerceariaContext()
     {
     }
