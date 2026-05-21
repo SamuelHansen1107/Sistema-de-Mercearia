@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MerceariaFacil.API.Migrations
 {
     [DbContext(typeof(MerceariaContext))]
-    [Migration("20260325234207_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20260520215740_CriacaoInicial")]
+    partial class CriacaoInicial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -71,8 +71,9 @@ namespace MerceariaFacil.API.Migrations
 
             modelBuilder.Entity("Usuario", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("varchar(255)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -103,16 +104,12 @@ namespace MerceariaFacil.API.Migrations
                     b.Property<int>("UsuarioId")
                         .HasColumnType("int");
 
-                    b.Property<string>("UsuarioId1")
-                        .IsRequired()
-                        .HasColumnType("varchar(255)");
-
                     b.Property<decimal>("ValorTotal")
                         .HasColumnType("decimal(65,30)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UsuarioId1");
+                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Vendas");
                 });
@@ -140,7 +137,7 @@ namespace MerceariaFacil.API.Migrations
                 {
                     b.HasOne("Usuario", "Usuario")
                         .WithMany("Vendas")
-                        .HasForeignKey("UsuarioId1")
+                        .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

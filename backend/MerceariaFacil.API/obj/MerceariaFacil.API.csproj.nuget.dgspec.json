@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lara\\Desktop\\Sistema_de_mercearia\\Sistema-de-Mercearia\\backend\\MerceariaFacil.API\\MerceariaFacil.API.csproj": {}
+    "C:\\workplace\\Sistema_de_mercearia\\Sistema-de-Mercearia\\backend\\MerceariaFacil.API\\MerceariaFacil.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lara\\Desktop\\Sistema_de_mercearia\\Sistema-de-Mercearia\\backend\\MerceariaFacil.API\\MerceariaFacil.API.csproj": {
+    "C:\\workplace\\Sistema_de_mercearia\\Sistema-de-Mercearia\\backend\\MerceariaFacil.API\\MerceariaFacil.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lara\\Desktop\\Sistema_de_mercearia\\Sistema-de-Mercearia\\backend\\MerceariaFacil.API\\MerceariaFacil.API.csproj",
+        "projectUniqueName": "C:\\workplace\\Sistema_de_mercearia\\Sistema-de-Mercearia\\backend\\MerceariaFacil.API\\MerceariaFacil.API.csproj",
         "projectName": "MerceariaFacil.API",
-        "projectPath": "C:\\Users\\Lara\\Desktop\\Sistema_de_mercearia\\Sistema-de-Mercearia\\backend\\MerceariaFacil.API\\MerceariaFacil.API.csproj",
+        "projectPath": "C:\\workplace\\Sistema_de_mercearia\\Sistema-de-Mercearia\\backend\\MerceariaFacil.API\\MerceariaFacil.API.csproj",
         "packagesPath": "C:\\Users\\Lara\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lara\\Desktop\\Sistema_de_mercearia\\Sistema-de-Mercearia\\backend\\MerceariaFacil.API\\obj\\",
+        "outputPath": "C:\\workplace\\Sistema_de_mercearia\\Sistema-de-Mercearia\\backend\\MerceariaFacil.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lara\\AppData\\Roaming\\NuGet\\NuGet.Config"

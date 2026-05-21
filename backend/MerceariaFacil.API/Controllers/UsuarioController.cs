@@ -19,4 +19,74 @@ public class UsuarioController : ControllerBase
         var usuarios = await _context.Usuarios.ToListAsync();
         return Ok(usuarios);
     }
+
+    [HttpPost]
+    public async Task<IActionResult> Post(Usuario usuario)
+    {
+        _context.Usuarios.Add(usuario);
+        await _context.SaveChangesAsync();
+        return Ok(usuario);
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var usuario = await _context.Usuarios.FindAsync(id);
+
+        if (usuario == null)
+        {
+            return NotFound();
+        }
+
+         _context.Usuarios.Remove(usuario);
+        await _context.SaveChangesAsync();
+        return NoContent();
+    }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Put(int id, Usuario usuario)
+    {
+        var usuarioBanco = await _context.Usuarios.FindAsync(id);
+
+        if (usuarioBanco == null)
+        {
+            return NotFound();
+        }
+
+        usuarioBanco.Name = usuario.Name;
+        usuarioBanco.Email = usuario.Email;
+        usuarioBanco.Senha = usuario.Senha;
+
+        await _context.SaveChangesAsync();
+
+        return NoContent();
+    }
+
+    [HttpPatch("{id}")]
+    public async Task<IActionResult> Patch(int id, Usuario usuario)
+    {
+        var usuarioBanco = await _context.Usuarios.FindAsync(id);
+
+        if (usuarioBanco == null)
+        {
+            return NotFound();
+        }
+
+        if (!string.IsNullOrEmpty(usuario.Name))
+        {
+            usuarioBanco.Name = usuario.Name;
+        }
+        if (!string.IsNullOrEmpty(usuario.Email))
+        {
+            usuarioBanco.Email = usuario.Email;
+        }
+        if (!string.IsNullOrEmpty(usuario.Senha))
+        {
+            usuarioBanco.Senha = usuario.Senha;
+        }
+
+        await _context.SaveChangesAsync();
+
+        return NoContent();
+    }
 }
