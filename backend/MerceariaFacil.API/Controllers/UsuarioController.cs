@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 [ApiController]
 [Route("api/[controller]")]
+
 public class UsuarioController : ControllerBase
 {
     private readonly MerceariaContext _context;
@@ -12,7 +13,6 @@ public class UsuarioController : ControllerBase
         _context = context;
     }
 
-    // GET api/usuario
     [HttpGet]
     public async Task<IActionResult> Get()
     {
